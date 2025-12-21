@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Ahmed Yasser Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #0F172A;
+            color: #F1F5F9;
+            padding: 20px;
+        }
+        .test-box {
+            background: #1E293B;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+        h1 {
+            color: #6366F1;
+            margin-bottom: 20px;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success {
+            background: #10B981;
+            color: white;
+        }
+        .error {
+            background: #EF4444;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 اختبار الملفات</h1>
+    
+    <div class="test-box">
+        <h2>فحص الملفات:</h2>
+        <div id="results"></div>
+    </div>
+    
+    <div class="test-box">
+        <h2>الخطوات التالية:</h2>
+        <ol>
+            <li>افتح <code>index.html</code> في المتصفح</li>
+            <li>افتح Developer Tools (F12)</li>
+            <li>تحقق من Console للأخطاء</li>
+            <li>تحقق من Network tab لمعرفة الملفات التي لم يتم تحميلها</li>
+        </ol>
+    </div>
+    
+    <script>
+        const files = [
+            'index.html',
+            'css/style.css',
+            'css/animations.css',
+            'css/responsive.css',
+            'js/main.js',
+            'js/animations.js',
+            'js/three-scene.js'
+        ];
+        
+        const resultsDiv = document.getElementById('results');
+        
+        files.forEach(file => {
+            fetch(file)
+                .then(response => {
+                    const status = document.createElement('div');
+                    status.className = 'status';
+                    if (response.ok) {
+                        status.className += ' success';
+                        status.textContent = `✅ ${file} - موجود`;
+                    } else {
+                        status.className += ' error';
+                        status.textContent = `❌ ${file} - غير موجود (${response.status})`;
+                    }
+                    resultsDiv.appendChild(status);
+                })
+                .catch(error => {
+                    const status = document.createElement('div');
+                    status.className = 'status error';
+                    status.textContent = `❌ ${file} - خطأ: ${error.message}`;
+                    resultsDiv.appendChild(status);
+                });
+        });
+    </script>
+</body>
+</html>
+

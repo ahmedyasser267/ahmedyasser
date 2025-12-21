@@ -1,0 +1,30 @@
+{
+  "name": "ahmed-yasser-portfolio",
+  "version": "1.0.0",
+  "description": "Professional 3D Portfolio Website for Ahmed Yasser - Flutter Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "dev": "npx http-server -p 8000 -o",
+    "build": "echo 'No build step required - static site'"
+  },
+  "keywords": [
+    "portfolio",
+    "flutter",
+    "developer",
+    "3d",
+    "threejs",
+    "seo",
+    "pwa"
+  ],
+  "author": "Ahmed Yasser Mohamed",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmedyasser/portfolio.git"
+  },
+  "homepage": "https://ahmedyasser.dev",
+  "devDependencies": {},
+  "dependencies": {}
+}
+

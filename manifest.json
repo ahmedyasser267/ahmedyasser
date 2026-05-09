@@ -4,8 +4,8 @@
   "description": "بورتفوليو احترافي لأحمد ياسر محمد - مطور Flutter ومهندس برمجيات من الإسكندرية، مصر",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0F172A",
-  "theme_color": "#6366F1",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
   "orientation": "portrait-primary",
   "icons": [
     {

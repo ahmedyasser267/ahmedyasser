@@ -5,7 +5,7 @@
 // Theme Toggle
 function initThemeToggle() {
   const themeToggle = document.querySelector('.theme-toggle');
-  const currentTheme = localStorage.getItem('theme') || 'dark';
+  const currentTheme = localStorage.getItem('theme') || 'light';
   
   // Set initial theme
   document.documentElement.setAttribute('data-theme', currentTheme);

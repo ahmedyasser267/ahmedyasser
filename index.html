@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,21 @@
     <meta name="description" content="أحمد ياسر - مطور Flutter محترف مع خبرة في تطوير تطبيقات الموبايل، Firebase، وتطبيقات Android/iOS. خريج علوم حاسب مع سجل حافل في المشاريع الناجحة. Ahmed Yasser Flutter Developer from Alexandria, Egypt.">
     <meta name="keywords" content="أحمد ياسر, Ahmed Yasser, مطور Flutter, مبرمج موبايل, Flutter Developer Egypt, تطوير تطبيقات, Alexandria Developer, المبرمج أحمد ياسر, Ahmed Yasser Programmer, Flutter Developer Alexandria">
     <meta name="author" content="Ahmed Yasser Mohamed">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="language" content="Arabic, English">
-    <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="https://ahmedyasser.dev/">
+    <link rel="alternate" hreflang="ar" href="https://ahmedyasser.dev/">
+    <link rel="alternate" hreflang="en" href="https://ahmedyasser.dev/">
+    <link rel="alternate" hreflang="x-default" href="https://ahmedyasser.dev/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ahmedyasser.dev/">
     <meta property="og:title" content="أحمد ياسر | مطور Flutter ومهندس برمجيات">
     <meta property="og:description" content="بورتفوليو احترافي لأحمد ياسر - مطور Flutter متخصص في بناء تطبيقات الموبايل عالية الأداء باستخدام Flutter & Firebase">
-    <meta property="og:image" content="https://ahmedyasser.dev/og-image.jpg">
+    <meta property="og:image" content="https://ahmedyasser.dev/assets/images/profile.jpeg">
+    <meta property="og:image:secure_url" content="https://ahmedyasser.dev/assets/images/profile.jpeg">
+    <meta property="og:image:alt" content="أحمد ياسر محمد — مطور Flutter ومهندس برمجيات — Ahmed Yasser Flutter Developer Portfolio">
     <meta property="og:locale" content="ar_EG">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:site_name" content="Ahmed Yasser Portfolio">
@@ -31,7 +35,8 @@
     <meta property="twitter:url" content="https://ahmedyasser.dev/">
     <meta property="twitter:title" content="أحمد ياسر | مطور Flutter ومهندس برمجيات">
     <meta property="twitter:description" content="بورتفوليو احترافي لأحمد ياسر - مطور Flutter متخصص في بناء تطبيقات الموبايل">
-    <meta property="twitter:image" content="https://ahmedyasser.dev/og-image.jpg">
+    <meta property="twitter:image" content="https://ahmedyasser.dev/assets/images/profile.jpeg">
+    <meta name="twitter:image:alt" content="أحمد ياسر محمد — مطور Flutter — Ahmed Yasser portfolio">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%236366F1'/%3E%3Ctext x='50%25' y='50%25' font-size='120' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle' font-family='Arial'%3Eأ.ي%3C/text%3E%3C/svg%3E">
@@ -43,6 +48,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     
     <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/images/profile.jpeg" as="image" fetchpriority="high">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" as="script">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
@@ -54,17 +60,26 @@
     
     <!-- Manifest -->
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#6366F1">
+    <meta name="theme-color" content="#FFFFFF">
     
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
+      "@id": "https://ahmedyasser.dev/#person",
       "name": "Ahmed Yasser Mohamed",
       "alternateName": ["أحمد ياسر محمد", "Ahmed Yasser", "المبرمج أحمد ياسر", "Ahmed Yasser Programmer"],
       "jobTitle": "Flutter Developer & Software Engineer",
       "description": "مطور Flutter محترف متخصص في بناء تطبيقات الموبايل عالية الأداء",
+      "image": [
+        "https://ahmedyasser.dev/assets/images/profile.jpeg",
+        {
+          "@type": "ImageObject",
+          "url": "https://ahmedyasser.dev/assets/images/profile.jpeg",
+          "caption": "Ahmed Yasser Mohamed — Flutter developer portrait — الإسكندرية مصر"
+        }
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Alexandria",
@@ -73,7 +88,7 @@
       },
       "email": "ahmedyasser100029@gmail.com",
       "telephone": "+201288114906",
-      "url": "https://ahmedyasser.dev",
+      "url": "https://ahmedyasser.dev/",
       "sameAs": [
         "https://www.linkedin.com/in/ahmed-yasser-7baab4222/",
         "https://github.com/ahmedyasser267",
@@ -97,7 +112,7 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Ahmed Yasser - Flutter Development Services",
-      "image": "https://ahmedyasser.dev/og-image.jpg",
+      "image": "https://ahmedyasser.dev/assets/images/profile.jpeg",
       "description": "خدمات تطوير تطبيقات الموبايل باستخدام Flutter",
       "address": {
         "@type": "PostalAddress",
@@ -110,7 +125,7 @@
         "latitude": 31.2001,
         "longitude": 29.9187
       },
-      "url": "https://ahmedyasser.dev",
+      "url": "https://ahmedyasser.dev/",
       "telephone": "+201288114906",
       "priceRange": "$$",
       "openingHoursSpecification": {
@@ -118,6 +133,29 @@
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "opens": "09:00",
         "closes": "18:00"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://ahmedyasser.dev/#website",
+      "name": "Ahmed Yasser — Flutter Developer Portfolio",
+      "alternateName": [
+        "أحمد ياسر محمد",
+        "Ahmed Yasser Programmer",
+        "المبرمج أحمد ياسر"
+      ],
+      "url": "https://ahmedyasser.dev/",
+      "inLanguage": ["ar", "en"],
+      "description": "Portfolio of Ahmed Yasser — Flutter & Firebase mobile developer in Alexandria, Egypt. بورتفوليو أحمد ياسر — مطور تطبيقات موبايل.",
+      "publisher": {
+        "@id": "https://ahmedyasser.dev/#person"
+      },
+      "mainEntity": {
+        "@id": "https://ahmedyasser.dev/#person"
       }
     }
     </script>
@@ -208,7 +246,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="hero-avatar">
-                        <img src="assets/images/image.png" alt="أحمد ياسر محمد - مطور Flutter" class="avatar-image">
+                        <img src="assets/images/profile.jpeg" alt="أحمد ياسر محمد، مطور Flutter ومهندس برمجيات، الإسكندرية مصر — Ahmed Yasser Mohamed Flutter developer Alexandria Egypt" class="avatar-image" width="300" height="300" decoding="async" fetchpriority="high">
                         <div class="avatar-glow"></div>
                     </div>
                 </div>
@@ -257,7 +295,7 @@
                     </div>
                     <div class="about-image">
                         <div class="image-wrapper">
-                            <img src="assets/images/image.png" alt="أحمد ياسر محمد" class="about-photo">
+                            <img src="assets/images/profile.jpeg" alt="صورة أحمد ياسر محمد، مهندس برمجيات ومطور تطبيقات موبايل — Ahmed Yasser Mohamed software engineer portrait" class="about-photo" width="400" height="400" loading="lazy" decoding="async">
                             <div class="image-glow"></div>
                         </div>
                     </div>
@@ -458,8 +496,10 @@
                 <p class="section-subtitle">مجموعة من أفضل المشاريع التي قمت بتطويرها ونشرها</p>
                 
                 <div class="projects-grid">
-                    <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
-                        <div class="project-image" style="background-image: url('assets/images/q tendera.jpeg'); background-size: cover; background-position: center;">
+                    <article class="project-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <div class="project-image">
+                            <img src="assets/images/profile.jpeg" alt="Tender App — تطبيق مناقصات قطر ولقطات من الواجهة — مشروع Flutter من أحمد ياسر — Qatar tenders mobile app screenshot by Ahmed Yasser" width="600" height="200" loading="lazy" decoding="async" class="project-thumb" itemprop="image">
                             <div class="project-overlay">
                                 <a href="https://play.google.com/store/apps/details?id=com.tender.qtenders&pli=1" class="project-link" aria-label="View Project" target="_blank" rel="noopener">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -488,8 +528,10 @@
                         </div>
                     </article>
                     
-                    <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
-                        <div class="project-image" style="background-image: url('assets/images/kayan z.jpeg'); background-size: cover; background-position: center;">
+                    <article class="project-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <div class="project-image">
+                            <img src="assets/images/profile.jpeg" alt="Kayan Z — تطبيق عقارات Flutter — لقطة شاشة من أعمال أحمد ياسر — Real estate app screenshot Ahmed Yasser" width="600" height="200" loading="lazy" decoding="async" class="project-thumb" itemprop="image">
                             <div class="project-overlay">
                                 <a href="https://play.google.com/store/apps/details?id=com.kayan.z" class="project-link" aria-label="View Project" target="_blank" rel="noopener">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -518,8 +560,10 @@
                         </div>
                     </article>
                     
-                    <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
-                        <div class="project-image" style="background-image: url('assets/images/q dealers.jpeg'); background-size: cover; background-position: center;">
+                    <article class="project-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <div class="project-image">
+                            <img src="assets/images/profile.jpeg" alt="Q Dealer — تطبيق بيع وشراء وتجارة إلكترونية — لقطة شاشة Flutter أحمد ياسر — E‑commerce app screenshot" width="600" height="200" loading="lazy" decoding="async" class="project-thumb" itemprop="image">
                             <div class="project-overlay">
                                 <a href="https://play.google.com/store/apps/details?id=com.qatardealer.qatar_dealer_mobile" class="project-link" aria-label="View Project" target="_blank" rel="noopener">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -548,8 +592,10 @@
                         </div>
                     </article>
                     
-                    <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
-                        <div class="project-image" style="background-image: url('assets/images/easy learn.jpeg'); background-size: cover; background-position: center;">
+                    <article class="project-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <div class="project-image">
+                            <img src="assets/images/profile.jpeg" alt="Easy Learn — منصة تعليمية للجامعات — تطبيق Flutter أحمد ياسر — Educational app screenshot" width="600" height="200" loading="lazy" decoding="async" class="project-thumb" itemprop="image">
                             <div class="project-overlay">
                                 <a href="https://play.google.com/store/apps/details?id=com.easy.learn.easylearn" class="project-link" aria-label="View Project" target="_blank" rel="noopener">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -578,8 +624,10 @@
                         </div>
                     </article>
                     
-                    <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
-                        <div class="project-image" style="background-image: url('assets/images/hallol.jpeg'); background-size: cover; background-position: center;">
+                    <article class="project-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <div class="project-image">
+                            <img src="assets/images/profile.jpeg" alt="Haloolldarak — تطبيق موبايل Flutter — لقطة شاشة من بورتفوليو أحمد ياسر — Mobile app screenshot" width="600" height="200" loading="lazy" decoding="async" class="project-thumb" itemprop="image">
                             <div class="project-overlay">
                                 <a href="https://play.google.com/store/apps/details?id=com.haloolldarak.haloolldarak" class="project-link" aria-label="View Project" target="_blank" rel="noopener">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -608,8 +656,10 @@
                         </div>
                     </article>
                     
-                    <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
-                        <div class="project-image" style="background-image: url('assets/images/kayan z.jpeg'); background-size: cover; background-position: center;">
+                    <article class="project-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <div class="project-image">
+                            <img src="assets/images/profile.jpeg" alt="Kayan — تطبيق Flutter قيد الإطلاق — لقطة شاشة أحمد ياسر — Mobile app preview screenshot" width="600" height="200" loading="lazy" decoding="async" class="project-thumb" itemprop="image">
                             <div class="project-overlay">
                                 <a href="#" class="project-link" aria-label="View Project" target="_blank" rel="noopener">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -638,8 +688,10 @@
                         </div>
                     </article>
                     
-                    <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
-                        <div class="project-image" style="background-image: url('assets/images/elsalsma.png'); background-size: cover; background-position: center;">
+                    <article class="project-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <div class="project-image">
+                            <img src="assets/images/profile.jpeg" alt="Elsalm App — تطبيق موبايل Flutter على Google Play — لقطة شاشة أحمد ياسر — App screenshot" width="600" height="200" loading="lazy" decoding="async" class="project-thumb" itemprop="image">
                             <div class="project-overlay">
                                 <a href="https://play.google.com/store/apps/details?id=com.elsalm.elsalmapp" class="project-link" aria-label="View Project" target="_blank" rel="noopener">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -668,8 +720,10 @@
                         </div>
                     </article>
                     
-                    <article class="project-card" itemscope itemtype="https://schema.org/SoftwareApplication">
-                        <div class="project-image" style="background-image: url('assets/images/zakarny.png'); background-size: cover; background-position: center;">
+                    <article class="project-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <div class="project-image">
+                            <img src="assets/images/profile.jpeg" alt="Zakarney — تطبيق Flutter — لقطة شاشة من مشاريع أحمد ياسر — Mobile application screenshot" width="600" height="200" loading="lazy" decoding="async" class="project-thumb" itemprop="image">
                             <div class="project-overlay">
                                 <a href="https://play.google.com/store/apps/details?id=com.zakarney.zakarney" class="project-link" aria-label="View Project" target="_blank" rel="noopener">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
